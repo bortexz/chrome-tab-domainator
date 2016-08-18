@@ -1,0 +1,14 @@
+<div class='domain-item'>
+  <div class='domain-title' (click)='toggleTabs()'>
+      <img class='domain-favicon' src="{{domain.favicon}}" />
+      <span>{{domain.domain}}</span>
+
+      <span class='close-button' (click)='closeButtonClick($event)'><i class='fa fa-close'></i></span>
+
+  </div>
+  <ul class='tabs-list' @expandedState='expandedState'>
+    <li *ngFor='let tab of domain.tabs'>
+      <td-tab-container [tab]='tab'></td-tab-container>
+    </li>
+  </ul>
+</div>

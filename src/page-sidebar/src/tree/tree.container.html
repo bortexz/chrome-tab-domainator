@@ -1,0 +1,5 @@
+<div id='options'>
+  <a (click)='orderTabs()'><i class='fa fa-sort-amount-desc'></i> Order tabs as shown here</a>
+  <input type='text' #searchInput [(ngModel)]='searchQuery' placeholder="Filter..."/>
+</div>
+<td-tree [tree]="tree | tdTreeSearch: searchQuery"></td-tree>

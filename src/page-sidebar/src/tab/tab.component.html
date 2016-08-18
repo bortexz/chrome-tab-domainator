@@ -1,0 +1,14 @@
+<div class='tab-item'>
+  <div class='tab-item-info'>
+    <i class='tab-item-go fa fa-sign-out'></i>
+
+    <div class='tab-item-text'
+      (click)='tabClick()'>
+      <strong><span>{{tab.title}}</span></strong>
+      <span>{{tab.url}}</span>
+    </div>
+  </div>
+  <div class='tab-item-actions' (click)='closeButton()'>
+    <a><i class='fa fa-close'></i></a>
+  </div>
+</div>

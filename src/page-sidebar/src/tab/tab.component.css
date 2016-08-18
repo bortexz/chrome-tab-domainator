@@ -1,0 +1,81 @@
+.tab-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding: 10px;
+  overflow: hidden;
+
+  height: 40px;
+  background-color: rgb(245,245,245);
+}
+
+.tab-item-text {
+  flex: 1;
+  min-width: 0px;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  text-align: start;
+
+  padding: 0px 10px;
+}
+
+.tab-item-text * {
+  display: block;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  flex-basis: auto;
+  width: 100%;
+}
+
+.tab-item-actions {
+  flex-basis: auto;
+  align-self: flex-end;
+  width: 45px;
+  height: inherit;
+
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+
+  font-size: 14;
+
+  color:rgba(0,0,0,0.5);
+}
+
+.tab-item-actions:hover {
+  color:rgba(0,0,0,1);
+  cursor: pointer;
+}
+
+.tab-item-go {
+  font-size: 14;
+  color: rgba(0,0,0,0.5);
+  display:none;
+}
+
+.tab-item-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  min-width: 0px;
+
+  cursor: pointer;
+}
+
+.tab-item-info:hover .tab-item-go {
+  display: inline;
+}
+

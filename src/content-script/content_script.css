@@ -1,0 +1,28 @@
+@keyframes domain-tabs-appear {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+#domain-tabs-sidebar {
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 9999;
+    background: white;
+
+    animation: domain-tabs-appear 0.2s 1 linear;
+}
+
+.domain-tabs-sidebar-closing {
+    right: -400px !important;
+
+    -webkit-transition: right 0.2s linear;
+    transition: right 0.2s linear;
+}
+

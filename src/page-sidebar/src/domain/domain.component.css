@@ -1,0 +1,49 @@
+.domain-item {
+  display: inline-block;
+  list-style: none;
+
+  width: 100%;
+}
+
+.domain-title {
+  height: 40px;
+  padding: 5px 25px 5px 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.domain-title span {
+  margin-left: 20px;
+}
+
+.close-button {
+  margin-left: auto !important;
+  padding: 10px;
+  font-size: 14;
+  color: indianred;
+  display: block;
+}
+
+.close-button:hover {
+  color: darkred;
+}
+
+.tabs-list {
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.tabs-list li {
+  display: block;
+}
+
+.domain-favicon {
+  width: 25px;
+  height: 25px;
+}
